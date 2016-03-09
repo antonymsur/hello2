@@ -1,9 +1,8 @@
 from django.conf import settings
 from django.http import HttpResponse
 from django.http import HttpResponseRedirect
-import json
 import requests
-import urllib
+
 
 def hello2(request):
     if settings.AUTH_PROTO == 'OIDC':
